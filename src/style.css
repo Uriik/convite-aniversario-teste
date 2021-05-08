@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(239,128,177,1) 0%, rgba(240,154,193,1) 100%);
+    
+}
+.container-father{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #A7A6D3,  #D297C3, #EF80B1, #FFEAC8, #FBDEEC);
+    background-size:400% 400% ;
+    animation: colors 15s ease-in infinite;
+}
+@keyframes colors{
+    0%{
+        background-position: 8% 50%;
+    }   
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 8% 50%;
+    }
+/* ===========================RESPONSIVO============================= */
+}
+@media (max-width: 1024px){
+    div .container-child{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    img, .border-one, .border-two{
+        display: none;
+    }
+    div .unicornio{
+        background-image: url('unicorio-responsivo.png');
+        margin-top: 1rem;
+        width: 283px;
+        height: 170px;
+    }
+}
+/* ===========================END-RESPONSIVO============================= */
+.container-child{
+    height: 100vh;
+    width: 1080px;  
+}
+
+
+.invit{
+    width: 100%;
+    height: 100%;
+    /* background: rgb(96, 200, 96); */
+}
+.unicornio{
+    width: 360px;
+    height: 260px;
+    background-image: url('unicornio.png');
+    background-repeat: no-repeat;
+}
+.name-birthday{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    color: white;
+}
+
+.year-birthday, .celebrate{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 5px;
+}
+.hour-birthday, .locale, .final-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+.date-birthday{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin: 5px;
+}
+address{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+/* ====================================================== */
+
+.frame{
+    width: 100%;
+    height: 100%;
+}
+.border-one{
+    width: 440px;
+    margin:10px 0 0 10px ;
+    height: 540px;
+    border: 2px solid rgba(0, 0, 0, 0.24);
+}
+.border-two{
+    width: 440px;
+    height: 540px;
+    border: 2px solid white; 
+    position:fixed;
+}
+.img-children{
+    position:fixed;
+    width: 420px;
+    height: 520px;
+}
+
+
+/* ==========FlexBox========== */
+
+.flex{
+    display: flex;
+}
+.flex1{
+    flex: 1;
+}
+.flex2{
+    flex: 2;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
